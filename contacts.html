@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Used to make my website compatible -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- My website title -->
+    <title>Contact</title>
+    <!-- Font awesome kit is used to automatic use the fonts accoriding to background context taken from https://fontawesome.com/start -->
+    <script src="https://kit.fontawesome.com/f08a1b16ac.js" crossorigin="anonymous"></script>
+    <!-- Linking to google fonts taken from https://fonts.google.com/-->
+    <link href="https://fonts.googleapis.com/css?family=Overlock+SC&display=swap" rel="stylesheet">
+    <!-- Used to link boostraap to stylesheet taken from https://www.bootstrapcdn.com/ -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Linking my web page to  stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Setting up header for heading of web page --> 
+    <header class="top-header">
+        <div class="hero">
+            <h1>Your Feedback</h1>
+        </div>
+    </header>
+    <!-- Creating a navigating links between four pages  -->
+    <nav>
+        <ul>
+            <li id="Home"><a href="index.html">Home</a></li>
+            <li id="Portfolio"><a href="portfolio.html">Portfolio</a></li>
+            <li id="Contacts"><a href="contacts.html">Contacts</a></li>
+            <li id="Resume" class="active"><a href="resume.html">CV</a></li>
+        </ul>
+    </nav>
+    <br>
+<!-- For the following form I have format form  https://amazingcss.com/flat-responsive-form-using-css3-html5-rex-kirby 
+But for the CSS, I kept my own color style.--> 
+<div id="form-main">
+  <div id="form-div">
+    <form class="form" id="form1"> 
+      <p class="name"> 
+        <input id="input" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" 
+        class="form-control" placeholder="Firstname  (i.e: Rootvi)" value="" id="name">
+        <!--I felt that using placeholders will be a great way to present myself and grant a form for them to use at the same time.-->
+      </p>
+      <p class="name">
+        <input id="input" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" 
+        class="form-control" placeholder="Surname  (i.e: Pandya)" value="" id="name">
+      </p>
+      <p class="name">
+        <input id="input" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" 
+        class="form-control" placeholder="Current Occupation (i.e: Student)" value="" id="name">
+      </p>
+      <p class="email">
+        <input id="input" name="email" type="text" class="validate[required,custom[email]] feedback-input" 
+        class="form-control" placeholder="Email (i.e: pandyarootvi@gmail.com)" value="" id="email"/>
+      </p>
+      
+      <p class="text">
+        <input id="input" textarea name="text" class="validate[required,length[6,500]] feedback-input" id="comment" class="form-control" value="" 
+        placeholder="Your Opinions Regarding My Website"></textarea>
+      </p>
+      <footer class="links">
+        <!-- Adding buttons to submit or cancel -->
+        <button type = "submit" form="nameform" value="submit" class="submit">Send</button>
+        <button type="submit" form="nameform" value="Clear" class="clear">Cancel</button>
+        <!-- Adding social media links for communication --> 
+        <div class icons>
+          <a href="https://github.com/rootvi97">
+              <i class="fa fa-github-alt" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.instagram.com/rjp_978211/">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+          </a>
+          <a href="https://codepen.io/r281197">
+              <i class="fa fa-codepen" aria-hidden="true"></i>
+          </a>
+          <a href="https://discord.com/channels/@me/647822877818880040">
+              <i class="fa fa-discord" aria-hidden="true"></i>
+          </a>
+      </div>
+    </footer>
+    </form>
+  </div>
+  </div>
+  <!-- Linking main javascript file with contac page -->
+  <script src="main.js"></script>
+  </body>
+  </html>

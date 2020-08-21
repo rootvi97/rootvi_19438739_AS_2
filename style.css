@@ -1,0 +1,447 @@
+/* Styling all four of my web pages all will have same styles */
+*{
+    margin: 0;
+    padding: 0;
+    background-color: none(253, 253, 253);
+    text-align: center;
+    font-family: sans-serif;
+}
+
+/* Styling header  */
+header{
+    margin: none;
+    padding: none;
+}
+
+/* Styling body */
+body {
+    /* alligning the text, addind background image was taken from https://source.unsplash.com/1600x900/?dark and setting the height */
+    text-align: center;
+    text-shadow: 0 1px 0px rgb(255, 253, 253);
+    background-image: url('https://source.unsplash.com/1600x900/?dark');
+    min-height: 100vh;
+    z-index: -10;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 1.3rem;		    
+    color: rgb(255, 255, 255);
+}
+
+/* Reducing the opacity of all navigation links (active will have increased opacity to look brighter */
+#homeLink, #contactLink, #cvLink, #portfolioLink{opacity: 0.6; color: #ffffff; padding-bottom: 14px; transition: all .2s ease;} 
+
+/* Styling headings */
+h1 {
+    font-size: 3.5rem;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'Overlock SC', sans-serif;
+    color: #0400ff;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+    
+}
+
+h4{
+    font: bold;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    max-width: 100%;
+    color: rgb(212, 0, 255);
+    margin-bottom: 0;
+}
+
+/* Styling the quote generator app */
+#quote {
+    font-size: 1.3rem;
+    color: rgba(11, 12, 12, 0.55);
+}
+
+/* Styling the profile image contents */
+.circles img {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+}
+
+.circles {
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+    transition: sepia .25s ease-in-out;
+}
+
+
+.image{
+    height: 20vh;
+    width: 20vh;
+    border-radius: 100%;
+}
+
+/* Hover links the selection area with the elements */
+.image:hover{
+    border-style: none;
+    border-width: 30vh;
+    filter: sepia(75%);
+    transition: background-size 0.9s ease;
+}
+/* Setting margin for navigating elements */
+nav {
+    margin: 25px;
+}
+
+.top-right {
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    text-align: right;
+}
+
+/* Styling the links and lists */
+.links li a .i {
+    align-self: auto;
+}
+
+.li{
+    height: 0px;
+    float: left;
+    margin-right: 0px;
+    border-right: 0px solid;
+    padding: 10px;
+}
+
+li{
+    
+    border-bottom: 1px solid white;
+	padding: 0.5rem 0 0.5rem 0;
+	margin: 0 1rem 0 1rem;
+}
+
+li:last-child{
+    border-right: none;
+}
+
+li a {
+    text-decoration: none;
+    color: #fffffff8;
+    font: 25px/1 helvectica, verdana, sans-serif;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+}
+
+li a:hover {
+    color: rgb(0, 183, 255);
+}
+
+/* Setting style for checkboxes wherever applied  */
+.checkboxes{
+	float: right;
+	line-height: 15px;
+	width: 17px;
+	height: 17px;
+	background-color: #e9ecef;
+	border: 1px solid #e9ecef;
+	border-radius: 3px;
+}
+
+/* Active is used to active the list contents */
+li :active a{
+    font-weight: bold;
+    color: rgba(6, 30, 240, 0.7);
+}
+
+/* Styling the weather app */
+.weather-container {
+    width: 300px;
+    height: 300px;
+    background-color:transparent;
+    margin-left: auto;
+    padding: 2.5px;
+}
+
+.weather-icon {
+    width: 300px;
+    height: 120px;
+}
+
+.weather-icon img {
+    display: block;
+    margin: 0 auto;
+}
+
+.temperature-value {
+    width: 300px;
+    height: 60px;
+}
+
+.temperature-value p {
+    padding: 0;
+    margin: 0;
+    color: #293251;
+    font-size: 4em;
+    text-align: center;
+    cursor: pointer;
+}
+
+.temperature-value p:hover
+{
+
+}
+
+.temperature-value span {
+    color: #293251;
+    font-size: 0.5em;
+}
+
+.temperature-description p {
+    padding: 22px;
+    margin: 0;
+    color: #293251;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+/* Location will be depended on the user's location hence kept empty */
+.location {
+
+}
+
+.location p {
+    margin: 0;
+    padding: 0;
+    color: #293251;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+/* Styling the gallery area in protfolio web page */
+.gallery {
+    display: inline-block;
+    grid-template-columns: auto;
+    grid-gap: 0rem;
+    grid-auto-columns: 150vmin;
+}
+
+.picture { 
+    display: grid;
+    width: 65vh;
+    height: 65vh;
+    border-spacing: 0cm;
+    transition: .15s ease;
+    object-fit: none
+}
+
+.gallery:hover .picture {
+    filter: sepia(1);
+}
+
+/* Adding meadia function to set the size of gallery and its items */
+@media (max-width: 500px) {
+    .gallery{
+        max-width: 100%;
+        grid-column: 50;
+    }
+}
+
+/* Styling all the icons  */
+.icon{
+    height: 8vh;
+    width: 8vh;
+    border-radius: 100%;
+}
+
+/* Styling the forms whether it be feedback forms or normal forms */
+#form-div {
+	background-color: none;
+	padding: 0;
+	width: 75vh;
+	float: left;
+	left: 50%;
+	position: absolute;
+  	margin-top:30px;
+	margin-left: -260px;
+}
+
+.feedback-input {
+	color:#050505;
+	font-family: Verdana, Tahoma, sans-serif;
+  	font-weight:500;
+	font-size: 18px;
+	border-radius: 0;
+	line-height: 22px;
+	background-color: #ffffff;
+	padding: 13px 13px 13px 54px;
+	margin-bottom: 10px;
+	width:85%;
+  	border: 0;
+}
+
+.feedback-input:focus{
+	background: #fff;
+	box-shadow: 0pt;
+	border: 3px solid #3498db;
+	color: #000000;
+	outline: none;
+  padding: 13px 13px 13px 54px;
+}
+
+/* Styling particular areas like name, email, comment and text area. This all focuses on fill in the blanks area in the forms */
+.focused{
+	color:#30aed6;
+	border:#30aed6 solid 3px;
+}
+
+#name{
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#name:focus{
+	background-size: 30px 30px;
+	background-position: 8px 5px;
+  background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#email{
+	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#email:focus{
+	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-size: 30px 30px;
+  	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#comment{
+	background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+	background-size: 60px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#comment:focus{
+	background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+	background-size: 60px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+}
+
+/* Applying style to form using media */
+@media only screen and (max-width: 580px) {
+	#form-div{
+		left: 3%;
+		margin-right: 3%;
+		width: 88%;
+		margin-left: 0;
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+} 
+
+/* Styling buttons */
+button.submit{
+    background-color: #ff0000;
+    padding-left: 2ch;
+    padding-right: 2ch;
+    margin-right: 50%
+}
+
+button.clear{
+    background-color: green;
+}
+
+/* Styling personal details with unordered list and paragraph tags */
+.details i{
+    margin-right: 5px;
+    margin-left: 	3px;
+}
+
+.main-name {
+      font-size: 38px;
+      margin-bottom: 10px;
+      margin-top: 15px;
+      letter-spacing: -1px;
+    }
+.personal-details {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+  }
+ul{
+    list-style-type: none;
+    padding-left: 0px;
+}
+li {
+        margin-bottom: 0;
+    }
+i {
+          width: 18px;
+          margin-right: 5px;
+          margin-left: 3px;
+        }
+p{
+    color:  #fffffff8;
+}
+.my{
+    margin-left: 282px;
+}
+
+.my strong{
+    margin-bottom: 5%;
+}
+.header{
+    padding: 0;
+}
+.details{
+    padding: 30px;
+    display: inline-block;
+    margin: 0;
+}
+
+/* Styling the title page along with the photo */
+.title{
+    padding:0;
+    background: #2c12be;
+    color: rgb(224, 34, 34);
+    display: contents;
+}
+#photo{
+      border-radius: 100%;
+      display: inline-flex;
+      height: 100px;
+      width: 100px;
+}
+
+/* Styling the table which was used in resume page */
+table, td, th {
+      border-bottom: 1px solid #ddd;
+   padding: 0;
+   text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    height: 50px;
+}
+

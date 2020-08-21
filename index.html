@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Used to make my website compatible -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- My website title -->
+    <title>My Website</title>
+    <!-- Font awesome kit is used to automatic use the fonts accoriding to background context taken from https://fontawesome.com/start -->
+    <script src="https://kit.fontawesome.com/f08a1b16ac.js" crossorigin="anonymous"></script>
+    <!-- Used to link boostraap to stylesheet taken from https://www.bootstrapcdn.com/ -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Linking to google fonts taken from https://fonts.google.com/-->
+    <link href="https://fonts.googleapis.com/css?family=Overlock+SC&display=swap" rel="stylesheet">
+    <!-- Linking my web page to  stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Setting up header for heading of website -->
+    <header class="top-row">
+        <div class="region top-center">
+            <h1>Welcome to My World </h1>
+        </div>
+    </header>
+    <!-- Creating a navigating links between four pages  -->
+        <div class="region-top-left">
+            <nav>
+                <ul>
+                    <li id="Home"><a href="index.html">Home</a></li>
+                    <li id="Portfolio"><a href="portfolio.html">Portfolio</a></li>
+                    <li id="Contacts"><a href="contacts.html">Contacts</a></li>
+                    <li id="Resume" class="active"><a href="resume.html">CV</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Implementing weather app and fetching images -->
+        <div class="region top-right">
+            <div class="weather-container">
+                <div class="weather-icon">
+                    <img src= "symbols/lost.png" alt="weather-icon">
+                </div>
+                <!-- Setting temperature value and description with location -->
+                <div class="temperature-value">
+                    <p>- °<span>C</span></p>
+                </div>
+
+                <div class="temperature-description">
+                    <p> - </p>
+                </div>
+
+                <div class="location">
+                    <p> - </p>
+                </div>
+            </div>
+        </div>
+        <!-- Laying out profile images -->
+        <div class="circles">
+            <img src="images/profile.jpg" alt="Rootvi" class="image" id="me">
+            
+            <!-- Creating form for to do list along with submit and clear buttons -->
+            <div class="row">
+                <form id="form" class="col-lg-6 col-8 mx-auto">
+                    <div class="input-group">
+                        <input id="input" class="form-control" placeholder="Enter todo list item" value="">
+                        <span>
+                            <button id="btn" type="button" class="btn btn-primary">Submit</button>
+                        </span>
+                    </div>			     
+                </form>
+            </div>
+            <div class="row">				
+                <ul id="list" class="list col-lg-6 col-8 mx-auto">
+                </ul>
+            </div>
+            <div class="row">
+                <button id="btnClr" type="button" class="btn btn-primary mx-auto btnHide">Clear</button>
+            </div>				
+        </div>
+        
+        <!-- Adding a quote and linking it with twitter -->
+        <div>
+            <h4 id="quote">All our dreams can come true, if we have the courage to pursue them.-By Walt Disney</h4>
+            <div id="gen" onclick="genQuote()"><i class="fas fa-redo-alt"></i></div>
+            <a class="twitter-share-button" target="_blank"
+            href="https://twitter.com/intent/tweet?text=%20The%20Greatest%20Teacher%20,%20 %20Failure%20is%20-%20Yoda">
+            <i class="fab fa-twitter" aria-hidden="true"></i></a>
+        </div>
+
+        <!-- Adding social media links for communication -->
+        <footer class="links">
+            <div class icons>
+                <a href="https://github.com/rootvi97">
+                    <i class="fa fa-github-alt" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.instagram.com/rjp_978211/">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a href="https://codepen.io/r281197">
+                    <i class="fa fa-codepen" aria-hidden="true"></i>
+                </a>
+                <a href="https://discord.com/channels/@me/647822877818880040">
+                    <i class="fa fa-discord" aria-hidden="true"></i>
+                </a>
+            </div>
+        </footer>
+    <!-- Linking main javascript file with index page -->
+    <script src=" main.js"></script>
+</body>
+</html>

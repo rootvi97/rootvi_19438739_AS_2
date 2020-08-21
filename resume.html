@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Used to make my website compatible -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Curriculam Vitae</title>
+    <!-- Font awesome kit is used to automatic use the fonts accoriding to background context taken from https://fontawesome.com/start -->
+    <script src="https://kit.fontawesome.com/f08a1b16ac.js" crossorigin="anonymous"></script>
+    <!-- Used to link boostraap to stylesheet taken from https://www.bootstrapcdn.com/ -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Linking to google fonts taken from https://fonts.google.com/-->
+    <link href="https://fonts.googleapis.com/css?family=Overlock+SC&display=swap" rel="stylesheet">
+    <!-- Linking my web page to  stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- Creating header with resume heading  -->
+<div>
+    <header class="top-header">
+        <div class="hero">
+            <h1>RESUME</h1>
+        </div>
+    </header>
+    <!-- Creating a navigating links between four pages  -->
+    <nav>
+        <ul>
+            <li id="Home"><a href="index.html">Home</a></li>
+            <li id="Portfolio"><a href="portfolio.html">Portfolio</a></li>
+            <li id="Contacts"><a href="contacts.html">Contacts</a></li>
+            <li id="Resume" class="active"><a href="resume.html">CV</a></li>
+        </ul>
+    </nav>
+    <!-- breaking the page -->
+    <br>
+    <!-- Creating body -->
+    <body>
+        <!---- For this page I have used the Curriculum Vitae format from https://codepen.io/iionciu/full/ppwLvv.
+        However, I have removed some parts and added new which fit with my design.-->
+        <div class="header">
+            <!-- Adding profile picture and my personal information -->
+            <img id="photo" src="images/profile.jpg">
+            <div class="details">
+              <h2 class="main-name">Rootvi Pandya</h2>
+                  <ul class="personal-details">
+                    <li>University Student </li>
+                    <li>University of Northampton</li>
+                    <li>07914546650</li>
+                    <br>
+                    <li><a href="mailto:pandyarootvi@gmail.com">pandyarootvi@gmail.com</a></li>
+                  </ul>
+            </div>
+        </div>
+        <!-- About me -->
+        <div class="Objective">
+            <h2 class="title">My Introduction</h2>
+                <p>
+                    I am enthusiastic and passionate about software related technological advancements. I have completed my primary studies in Belgium and secondary education in India.<br>
+                    Before attending University of Northampton.  I have done a year at Bedford college in 2018 in computing course.<br>
+                    Starting from last year I am a full time student in the year 1 software engineering.<br>
+                </p>
+        </div>
+        <br></br>
+        <!-- About my education -->
+        <div class="Education">
+            <h2 class="title">Studies</h2>
+            <h4>My Studies</h4>
+            <br></br>
+            <table>
+                <tr>
+                    <th>Study Years</th>
+                    <th>Institute</th>
+                    <th>Qualification</th>
+                    <th>Grades</th>
+                </tr>
+                <tr>
+                    <th>2018-2019 </th>
+                    <td> Bedford College, UK </td>
+                    <td>BTEC Level 4 in Higher National Certificate (HNC) in Computing </td>
+                    <td>Merit</td>
+                </tr>
+                <tr>
+                    <th> 2014-2016 </th>
+                    <td> JG International School, India </td>
+                    <td> International Baccalaureat Diploma Program (IBDP) | </td>
+                    <td> 20 Bands </td>
+
+                </tr>
+                    <th> 2012-2014 </th>
+                    <td> AFEEL International School, Africa</td>
+                    <td> International General Certificate of Secondary Education (IGCSE) </td>
+                    <td> 8 subjects grade A-C (including English and Maths). </td>
+                </tr>
+            </table>
+            <br></br>
+            <!-- About my skills. The skills have been further divided into sections like programming, 
+                microsoft office, language, soft and other skils-->
+            <div class="skills">
+                <h2 class="title">Skills </h2>
+                <div>
+                <h4>Programming Skills</h4><br>
+                <li>C</li>
+                <li>C++</li>
+                <li>C#</li>
+                <li>Java</li>
+                <li>SQL</li>
+                <li>HTML5</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <br></br>
+
+                <h4>Microsoft Office Skills</h4><br>
+                <li>Word</li>
+                <li>Excel</li>
+                <li>Power Point</li>
+                <li>Access</li>
+                <br></br>
+
+                <h4>Language Skills</h4><br>
+                <li>English</li>
+                <li>French</li>
+                <li>Gujarati</li>
+                <li>Hindi</li>
+
+                <h4>Soft Skills</h4><br>
+                <li>Diligent</li>
+                <li>Punctual</li>
+                <li>Self-motivated</li>
+                <li>Reliable</li>
+                <li>Teamwork</li>
+                <li>Time managemnet</li>
+                <li>Work under pressure</li>
+
+                <h4>Other Skills</h4><br>
+               <li>Networks: CISCO Packet Tracer</li>
+               <li>Github</li>
+                <br></br>
+                </div>
+            </div>
+        </div>
+        <br></br>
+        <!-- More reference will be available  -->
+        <div class="references">
+            <h2 class="title">References</h2>
+            <h4>References are vailable on request</h4>
+        </div>
+        <!-- Linking my actual Resume if more information is required -->
+        <div class="hero__links">
+            <a href="CV.pdf" target="_blank" class="hero__resume btn" title="Click to view my Resume">View Resume</a>
+        </div>
+        <!-- Adding social media links for communication -->
+        <footer class="links">
+            <div class icons>
+                <a href="https://github.com/rootvi97">
+                    <i class="fa fa-github-alt" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.instagram.com/rjp_978211/">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a href="https://codepen.io/r281197">
+                    <i class="fa fa-codepen" aria-hidden="true"></i>
+                </a>
+                <a href="https://discord.com/channels/@me/647822877818880040">
+                    <i class="fa fa-discord" aria-hidden="true"></i>
+                </a>
+            </div>
+        </footer>
+        <!-- Linking main javascript file with resume page -->
+        <script src="main.js"></script>
+</body>
+</html>
